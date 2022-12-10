@@ -1,0 +1,436 @@
+[14:11:50] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[14:11:51] [ServerMain/INFO]: Found new data pack file/bukkit, loading it automatically
+[14:11:52] [Worker-Main-14/INFO]: Loaded 7 recipes
+[14:11:53] [Server thread/INFO]: Starting minecraft server version 1.18.2
+[14:11:53] [Server thread/INFO]: Loading properties
+[14:11:54] [Server thread/INFO]: This server is running CraftBukkit version 3498-Spigot-b081915-10ba1be (MC: 1.18.2) (Implementing API version 1.18.2-R0.1-SNAPSHOT)
+[14:11:54] [Server thread/INFO]: Debug logging is enabled
+[14:11:54] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[14:11:54] [Server thread/INFO]: Using 4 threads for Netty based IO
+[14:11:54] [Server thread/INFO]: Default game type: SURVIVAL
+[14:11:54] [Server thread/INFO]: Generating keypair
+[14:11:54] [Server thread/INFO]: Starting Minecraft server on *:25565
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.noUnsafe: false
+[14:11:54] [Server thread/DEBUG]: Java version: 17
+[14:11:54] [Server thread/DEBUG]: sun.misc.Unsafe.theUnsafe: available
+[14:11:54] [Server thread/DEBUG]: sun.misc.Unsafe.copyMemory: available
+[14:11:54] [Server thread/DEBUG]: java.nio.Buffer.address: available
+[14:11:54] [Server thread/DEBUG]: direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-all-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:253) ~[netty-all-4.1.68.Final.jar:4.1.68.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:247) ~[netty-all-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:294) ~[netty-all-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88) ~[netty-all-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.ClassInitializerUtil.tryLoadClasses(ClassInitializerUtil.java:32) ~[netty-all-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.channel.epoll.Native.<clinit>(Native.java:72) ~[netty-all-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.channel.epoll.Epoll.<clinit>(Epoll.java:39) ~[netty-all-4.1.68.Final.jar:4.1.68.Final]
+	at net.minecraft.server.network.ServerConnection.a(ServerConnection.java:77) ~[spigot-1.18.2-R0.1-SNAPSHOT.jar:3498-Spigot-b081915-10ba1be]
+	at net.minecraft.server.dedicated.DedicatedServer.e(DedicatedServer.java:222) ~[spigot-1.18.2-R0.1-SNAPSHOT.jar:3498-Spigot-b081915-10ba1be]
+	at net.minecraft.server.MinecraftServer.w(MinecraftServer.java:1007) ~[spigot-1.18.2-R0.1-SNAPSHOT.jar:3498-Spigot-b081915-10ba1be]
+	at net.minecraft.server.MinecraftServer.lambda$0(MinecraftServer.java:304) ~[spigot-1.18.2-R0.1-SNAPSHOT.jar:3498-Spigot-b081915-10ba1be]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[14:11:54] [Server thread/DEBUG]: java.nio.Bits.unaligned: available, true
+[14:11:54] [Server thread/DEBUG]: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @5702319d
+	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:560) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:375) ~[netty-all-4.1.68.Final.jar:4.1.68.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:366) ~[netty-all-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:294) ~[netty-all-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88) ~[netty-all-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.util.internal.ClassInitializerUtil.tryLoadClasses(ClassInitializerUtil.java:32) ~[netty-all-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.channel.epoll.Native.<clinit>(Native.java:72) ~[netty-all-4.1.68.Final.jar:4.1.68.Final]
+	at io.netty.channel.epoll.Epoll.<clinit>(Epoll.java:39) ~[netty-all-4.1.68.Final.jar:4.1.68.Final]
+	at net.minecraft.server.network.ServerConnection.a(ServerConnection.java:77) ~[spigot-1.18.2-R0.1-SNAPSHOT.jar:3498-Spigot-b081915-10ba1be]
+	at net.minecraft.server.dedicated.DedicatedServer.e(DedicatedServer.java:222) ~[spigot-1.18.2-R0.1-SNAPSHOT.jar:3498-Spigot-b081915-10ba1be]
+	at net.minecraft.server.MinecraftServer.w(MinecraftServer.java:1007) ~[spigot-1.18.2-R0.1-SNAPSHOT.jar:3498-Spigot-b081915-10ba1be]
+	at net.minecraft.server.MinecraftServer.lambda$0(MinecraftServer.java:304) ~[spigot-1.18.2-R0.1-SNAPSHOT.jar:3498-Spigot-b081915-10ba1be]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[14:11:54] [Server thread/DEBUG]: java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[14:11:54] [Server thread/DEBUG]: sun.misc.Unsafe: available
+[14:11:54] [Server thread/DEBUG]: maxDirectMemory: 2147483648 bytes (maybe)
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.tmpdir: C:\Users\miker\AppData\Local\Temp (java.io.tmpdir)
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[14:11:54] [Server thread/DEBUG]: Platform: Windows
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.maxDirectMemory: -1 bytes
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[14:11:54] [Server thread/DEBUG]: java.nio.ByteBuffer.cleaner(): available
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.noPreferDirect: false
+[14:11:54] [Server thread/INFO]: Using default channel type
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.eventLoopThreads: 4
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.noKeySetOptimization: false
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.selectorAutoRebuildThreshold: 512
+[14:11:54] [Server thread/DEBUG]: org.jctools-core.MpscChunkedArrayQueue: available
+[14:11:54] [Server thread/TRACE]: instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5e5fcb0d
+[14:11:54] [Server thread/TRACE]: instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1db3b1f1
+[14:11:54] [Server thread/TRACE]: instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@67f83790
+[14:11:54] [Server thread/TRACE]: instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@379265de
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.processId: 12980 (auto-detected)
+[14:11:54] [Server thread/DEBUG]: -Djava.net.preferIPv4Stack: false
+[14:11:54] [Server thread/DEBUG]: -Djava.net.preferIPv6Addresses: false
+[14:11:54] [Server thread/DEBUG]: Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[14:11:54] [Server thread/DEBUG]: Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.machineId: a8:a1:59:ff:fe:d6:68:b1 (auto-detected)
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.allocator.numHeapArenas: 21
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.allocator.numDirectArenas: 21
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.allocator.pageSize: 8192
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.allocator.maxOrder: 11
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.allocator.chunkSize: 16777216
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.allocator.smallCacheSize: 256
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.allocator.normalCacheSize: 64
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.allocator.cacheTrimInterval: 8192
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.allocator.useCacheForAllThreads: true
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.allocator.type: pooled
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.threadLocalDirectBufferSize: 0
+[14:11:54] [Server thread/DEBUG]: -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[14:11:54] [Server thread/DEBUG]: Using manager EnhancedLocalRepositoryManager with priority 10.0 for libraries
+[14:11:55] [Server thread/INFO]: [VoidGen] Loading VoidGen v2.2.1
+[14:11:55] [Server thread/INFO]: [Starterinventory] Loading Starterinventory v1.0-SNAPSHOT
+[14:11:55] [Server thread/INFO]: [Multiverse-Core] Loading Multiverse-Core v4.3.1-b861
+[14:11:55] [Server thread/INFO]: [Multiverse-Portals] Loading Multiverse-Portals v4.2.1-b834
+[14:11:55] [Server thread/INFO]: [Multiverse-Inventories] Loading Multiverse-Inventories v4.2.3-b523
+[14:11:55] [Server thread/INFO]: [VoidGen] Enabling VoidGen v2.2.1
+[14:11:55] [Server thread/INFO]: [VoidGen] Using VoidChunkGen: VERSION_UNKNOWN
+[14:11:55] [Server thread/INFO]: Preparing level "world"
+[14:11:55] [Server thread/INFO]: -------- World Settings For [world] --------
+[14:11:55] [Server thread/INFO]: Item Despawn Rate: 6000
+[14:11:55] [Server thread/INFO]: Item Merge Radius: 2.5
+[14:11:55] [Server thread/INFO]: Simulation Distance: 10
+[14:11:55] [Server thread/INFO]: View Distance: 10
+[14:11:55] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: false
+[14:11:55] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[14:11:55] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[14:11:55] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[14:11:55] [Server thread/INFO]: Cane Growth Modifier: 100%
+[14:11:55] [Server thread/INFO]: Melon Growth Modifier: 100%
+[14:11:55] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[14:11:55] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[14:11:55] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[14:11:55] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[14:11:55] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[14:11:55] [Server thread/INFO]: Potato Growth Modifier: 100%
+[14:11:55] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[14:11:55] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[14:11:55] [Server thread/INFO]: Vine Growth Modifier: 100%
+[14:11:55] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[14:11:55] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[14:11:55] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[14:11:55] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[14:11:55] [Server thread/INFO]: Experience Merge Radius: 3.0
+[14:11:55] [Server thread/INFO]: Mob Spawn Range: 6
+[14:11:55] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv false / Isa false
+[14:11:55] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[14:11:55] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[14:11:55] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[14:11:55] [Server thread/INFO]: Max TNT Explosions: 100
+[14:11:55] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[14:11:55] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[14:11:57] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[14:11:58] [Worker-Main-19/INFO]: Preparing spawn area: 0%
+[14:11:58] [Worker-Main-20/INFO]: Preparing spawn area: 0%
+[14:11:58] [Worker-Main-19/INFO]: Preparing spawn area: 0%
+[14:11:59] [Worker-Main-18/INFO]: Preparing spawn area: 0%
+[14:11:59] [Server thread/DEBUG]: Added POI of type bee_nest @ BlockPosition{x=44, y=78, z=11}
+[14:11:59] [Worker-Main-15/INFO]: Preparing spawn area: 0%
+[14:12:00] [Worker-Main-13/INFO]: Preparing spawn area: 0%
+[14:12:00] [Worker-Main-16/DEBUG]: -Dio.netty.initialSeedUniquifier: 0x1eec7ed8e7e0bd48
+[14:12:00] [Server thread/DEBUG]: Added POI of type bee_nest @ BlockPosition{x=34, y=73, z=49}
+[14:12:00] [Worker-Main-18/INFO]: Preparing spawn area: 2%
+[14:12:00] [Server thread/DEBUG]: Added POI of type bee_nest @ BlockPosition{x=-13, y=117, z=-38}
+[14:12:01] [Worker-Main-22/INFO]: Preparing spawn area: 4%
+[14:12:01] [Worker-Main-13/INFO]: Preparing spawn area: 6%
+[14:12:02] [Worker-Main-13/INFO]: Preparing spawn area: 9%
+[14:12:02] [Worker-Main-13/INFO]: Preparing spawn area: 11%
+[14:12:03] [Worker-Main-16/INFO]: Preparing spawn area: 12%
+[14:12:03] [Worker-Main-14/DEBUG]: Calculation for StructureSet[structures=[a[structure=Reference{ResourceKey[minecraft:worldgen/configured_structure_feature / minecraft:stronghold]=net.minecraft.world.level.levelgen.feature.StructureFeature@410792ad}, weight=1]], placement=ConcentricRingsStructurePlacement[distance=32, spread=3, count=128]] took 7.648s
+[14:12:03] [Worker-Main-21/INFO]: Preparing spawn area: 16%
+[14:12:03] [Server thread/DEBUG]: Added POI of type bee_nest @ BlockPosition{x=99, y=83, z=-28}
+[14:12:04] [Worker-Main-15/INFO]: Preparing spawn area: 19%
+[14:12:04] [Worker-Main-22/INFO]: Preparing spawn area: 22%
+[14:12:05] [Worker-Main-14/INFO]: Preparing spawn area: 25%
+[14:12:05] [Worker-Main-15/INFO]: Preparing spawn area: 28%
+[14:12:06] [Worker-Main-16/INFO]: Preparing spawn area: 32%
+[14:12:06] [Worker-Main-22/INFO]: Preparing spawn area: 35%
+[14:12:07] [Worker-Main-22/INFO]: Preparing spawn area: 37%
+[14:12:07] [Worker-Main-12/INFO]: Preparing spawn area: 41%
+[14:12:08] [Worker-Main-18/INFO]: Preparing spawn area: 47%
+[14:12:08] [Server thread/DEBUG]: Added POI of type bee_nest @ BlockPosition{x=-137, y=75, z=142}
+[14:12:08] [Worker-Main-17/INFO]: Preparing spawn area: 55%
+[14:12:09] [Worker-Main-19/INFO]: Preparing spawn area: 59%
+[14:12:09] [Worker-Main-19/INFO]: Preparing spawn area: 67%
+[14:12:09] [Server thread/DEBUG]: Added POI of type bee_nest @ BlockPosition{x=-170, y=120, z=-18}
+[14:12:10] [Worker-Main-13/INFO]: Preparing spawn area: 72%
+[14:12:10] [Worker-Main-17/INFO]: Preparing spawn area: 77%
+[14:12:11] [Worker-Main-20/INFO]: Preparing spawn area: 85%
+[14:12:11] [Worker-Main-18/INFO]: Preparing spawn area: 90%
+[14:12:12] [Worker-Main-14/INFO]: Preparing spawn area: 98%
+[14:12:12] [Server thread/INFO]: Time elapsed: 14560 ms
+[14:12:12] [Server thread/INFO]: [Starterinventory] Enabling Starterinventory v1.0-SNAPSHOT
+[14:12:12] [Server thread/WARN]: [Starterinventory] Loaded class com.onarandombox.MultiverseCore.MultiverseCore from Multiverse-Core v4.3.1-b861 which is not a depend or softdepend of this plugin.
+[14:12:12] [Server thread/ERROR]: Error occurred while enabling Starterinventory v1.0-SNAPSHOT (Is it up to date?)
+java.lang.NullPointerException: Cannot invoke "org.bukkit.configuration.file.FileConfiguration.options()" because "this.configWorlds" is null
+	at com.onarandombox.MultiverseCore.utils.WorldManager.ensureConfigIsPrepared(WorldManager.java:723) ~[?:?]
+	at com.onarandombox.MultiverseCore.utils.WorldManager.loadDefaultWorlds(WorldManager.java:708) ~[?:?]
+	at w3n.eyris.carnage.tools.Main.onEnable(Main.java:47) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264) ~[spigot-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:342) ~[spigot-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:480) ~[spigot-api-1.18.2-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.enablePlugin(CraftServer.java:518) ~[spigot-1.18.2-R0.1-SNAPSHOT.jar:3498-Spigot-b081915-10ba1be]
+	at org.bukkit.craftbukkit.v1_18_R2.CraftServer.enablePlugins(CraftServer.java:432) ~[spigot-1.18.2-R0.1-SNAPSHOT.jar:3498-Spigot-b081915-10ba1be]
+	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:612) ~[spigot-1.18.2-R0.1-SNAPSHOT.jar:3498-Spigot-b081915-10ba1be]
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:414) ~[spigot-1.18.2-R0.1-SNAPSHOT.jar:3498-Spigot-b081915-10ba1be]
+	at net.minecraft.server.dedicated.DedicatedServer.e(DedicatedServer.java:263) ~[spigot-1.18.2-R0.1-SNAPSHOT.jar:3498-Spigot-b081915-10ba1be]
+	at net.minecraft.server.MinecraftServer.w(MinecraftServer.java:1007) ~[spigot-1.18.2-R0.1-SNAPSHOT.jar:3498-Spigot-b081915-10ba1be]
+	at net.minecraft.server.MinecraftServer.lambda$0(MinecraftServer.java:304) ~[spigot-1.18.2-R0.1-SNAPSHOT.jar:3498-Spigot-b081915-10ba1be]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[14:12:12] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.1-b861
+[14:12:12] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.1-b861" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
+[14:12:12] [Server thread/INFO]: [Multiverse-Core] §aWe are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
+[14:12:12] [Server thread/INFO]: -------- World Settings For [lobby] --------
+[14:12:12] [Server thread/INFO]: Item Despawn Rate: 6000
+[14:12:12] [Server thread/INFO]: Item Merge Radius: 2.5
+[14:12:12] [Server thread/INFO]: Simulation Distance: 10
+[14:12:12] [Server thread/INFO]: View Distance: 10
+[14:12:12] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: false
+[14:12:12] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[14:12:12] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[14:12:12] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[14:12:12] [Server thread/INFO]: Cane Growth Modifier: 100%
+[14:12:12] [Server thread/INFO]: Melon Growth Modifier: 100%
+[14:12:12] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[14:12:12] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[14:12:12] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[14:12:12] [Server thread/INFO]: Beetroot Growth Modifier: 100%
+[14:12:12] [Server thread/INFO]: Carrot Growth Modifier: 100%
+[14:12:12] [Server thread/INFO]: Potato Growth Modifier: 100%
+[14:12:12] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[14:12:12] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[14:12:12] [Server thread/INFO]: Vine Growth Modifier: 100%
+[14:12:12] [Server thread/INFO]: Cocoa Growth Modifier: 100%
+[14:12:12] [Server thread/INFO]: Bamboo Growth Modifier: 100%
+[14:12:12] [Server thread/INFO]: SweetBerry Growth Modifier: 100%
+[14:12:12] [Server thread/INFO]: Kelp Growth Modifier: 100%
+[14:12:12] [Server thread/INFO]: Experience Merge Radius: 3.0
+[14:12:12] [Server thread/INFO]: Mob Spawn Range: 6
+[14:12:12] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Ra 48 / Mi 16 / Tiv false / Isa false
+[14:12:12] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[14:12:12] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Desert: 14357617 Igloo: 14357618 Jungle: 14357619 Swamp: 14357620 Monument: 10387313 Ocean: 14357621 Shipwreck: 165745295 End City: 10387313 Slime: 987234911 Nether: 30084232 Mansion: 10387319 Fossil: 14357921 Portal: 34222645
+[14:12:12] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 1 Hopper Amount: 1
+[14:12:12] [Server thread/INFO]: Max TNT Explosions: 100
+[14:12:12] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[14:12:12] [Server thread/INFO]: Arrow Despawn Rate: 1200 Trident Respawn Rate:1200
+[14:12:12] [Server thread/INFO]: Preparing start region for dimension minecraft:lobby
+[14:12:12] [Server thread/INFO]: Time elapsed: 2 ms
+[14:12:12] [Server thread/INFO]: [Multiverse-Core] 2 - World(s) loaded.
+[14:12:12] [Server thread/WARN]: [Multiverse-Core] Buscript failed to load! The script command will be disabled! If you would like not to see this message, use `/mv conf enablebuscript false` to disable Buscript from loading.
+[14:12:12] [Server thread/INFO]: [Multiverse-Core] Version 4.3.1-b861 (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
+[14:12:12] [Server thread/DEBUG]: [Multiverse-Core] Help dumptruckman keep this project alive. Become a patron! https://www.patreon.com/dumptruckman
+[14:12:12] [Server thread/DEBUG]: [Multiverse-Core] One time donations are also appreciated: https://www.paypal.me/dumptruckman
+[14:12:12] [Server thread/INFO]: [Multiverse-Portals] Enabling Multiverse-Portals v4.2.1-b834
+[14:12:12] [Server thread/INFO]: [Multiverse-Portals] 1 - Portals(s) loaded
+[14:12:12] [Server thread/INFO]: [Multiverse-Portals 4.2.1-b834]  Enabled - By Rigby and fernferret
+[14:12:12] [Server thread/INFO]: [Multiverse-Inventories] Enabling Multiverse-Inventories v4.2.3-b523
+[14:12:12] [Server thread/INFO]: [Multiverse-Inventories 4.2.3-b523] enabled.
+[14:12:12] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[14:12:12] [Server thread/INFO]: Done (17.007s)! For help, type "help"
+[14:12:12] [Server thread/INFO]: [Multiverse-Inventories] First run!
+[14:12:14] [Server thread/DEBUG]: Autosave started
+[14:12:14] [Server thread/DEBUG]: Autosave finished
+[14:12:14] [Worker-Main-13/DEBUG]: Calculation for StructureSet[structures=[a[structure=Reference{ResourceKey[minecraft:worldgen/configured_structure_feature / minecraft:stronghold]=net.minecraft.world.level.levelgen.feature.StructureFeature@410792ad}, weight=1]], placement=ConcentricRingsStructurePlacement[distance=32, spread=3, count=128]] took 2.745s
+[14:12:16] [Server thread/DEBUG]: Autosave started
+[14:12:16] [Server thread/DEBUG]: Autosave finished
+[14:12:18] [Server thread/DEBUG]: Autosave started
+[14:12:18] [Server thread/DEBUG]: Autosave finished
+[14:12:20] [Server thread/DEBUG]: Autosave started
+[14:12:20] [Server thread/DEBUG]: Autosave finished
+[14:12:22] [Server thread/DEBUG]: Autosave started
+[14:12:22] [Server thread/DEBUG]: Autosave finished
+[14:12:24] [Server thread/DEBUG]: Autosave started
+[14:12:24] [Server thread/DEBUG]: Autosave finished
+[14:12:26] [Server thread/DEBUG]: Autosave started
+[14:12:26] [Server thread/DEBUG]: Autosave finished
+[14:12:28] [Server thread/DEBUG]: Autosave started
+[14:12:28] [Server thread/DEBUG]: Autosave finished
+[14:12:30] [Server thread/DEBUG]: Autosave started
+[14:12:30] [Server thread/DEBUG]: Autosave finished
+[14:12:32] [Server thread/DEBUG]: Autosave started
+[14:12:32] [Server thread/DEBUG]: Autosave finished
+[14:12:34] [Server thread/DEBUG]: Autosave started
+[14:12:34] [Server thread/DEBUG]: Autosave finished
+[14:12:36] [Server thread/DEBUG]: Autosave started
+[14:12:36] [Server thread/DEBUG]: Autosave finished
+[14:12:38] [Server thread/DEBUG]: Autosave started
+[14:12:38] [Server thread/DEBUG]: Autosave finished
+[14:12:40] [Server thread/DEBUG]: Autosave started
+[14:12:40] [Server thread/DEBUG]: Autosave finished
+[14:12:42] [Server thread/DEBUG]: Autosave started
+[14:12:42] [Server thread/DEBUG]: Autosave finished
+[14:12:44] [Server thread/DEBUG]: Autosave started
+[14:12:44] [Server thread/DEBUG]: Autosave finished
+[14:12:46] [Server thread/DEBUG]: Autosave started
+[14:12:46] [Server thread/DEBUG]: Autosave finished
+[14:12:48] [Server thread/DEBUG]: Autosave started
+[14:12:48] [Server thread/DEBUG]: Autosave finished
+[14:12:50] [Server thread/DEBUG]: Autosave started
+[14:12:50] [Server thread/DEBUG]: Autosave finished
+[14:12:51] [Netty Server IO #2/DEBUG]: Enabled auto read
+[14:12:51] [Netty Server IO #1/DEBUG]: Enabled auto read
+[14:12:51] [Netty Server IO #2/DEBUG]: -Dio.netty.recycler.maxCapacityPerThread: 4096
+[14:12:51] [Netty Server IO #2/DEBUG]: -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[14:12:51] [Netty Server IO #2/DEBUG]: -Dio.netty.recycler.linkCapacity: 16
+[14:12:51] [Netty Server IO #2/DEBUG]: -Dio.netty.recycler.ratio: 8
+[14:12:51] [Netty Server IO #2/DEBUG]: -Dio.netty.recycler.delayedQueue.ratio: 8
+[14:12:51] [Netty Server IO #2/DEBUG]: -Dio.netty.buffer.checkAccessible: true
+[14:12:51] [Netty Server IO #2/DEBUG]: -Dio.netty.buffer.checkBounds: true
+[14:12:51] [Netty Server IO #2/DEBUG]: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7f2259d3
+[14:12:51] [Netty Server IO #2/DEBUG]: Enabled auto read
+[14:12:51] [Netty Server IO #1/DEBUG]: Enabled auto read
+[14:12:52] [Server thread/DEBUG]: Autosave started
+[14:12:52] [Server thread/DEBUG]: Autosave finished
+[14:12:54] [Server thread/DEBUG]: Autosave started
+[14:12:54] [Server thread/DEBUG]: Autosave finished
+[14:12:54] [Netty Server IO #3/DEBUG]: Enabled auto read
+[14:12:54] [Netty Server IO #3/DEBUG]: Enabled auto read
+[14:12:54] [User Authenticator #1/DEBUG]: Opening connection to https://sessionserver.mojang.com/session/minecraft/hasJoined?serverId=24eda96c36e5a6c4b4a882c4fac746d27171b1c4&username=EyrisBby
+[14:12:54] [User Authenticator #1/DEBUG]: Reading data from https://sessionserver.mojang.com/session/minecraft/hasJoined?serverId=24eda96c36e5a6c4b4a882c4fac746d27171b1c4&username=EyrisBby
+[14:12:55] [User Authenticator #1/DEBUG]: Successful read, server response was 200
+[14:12:55] [User Authenticator #1/DEBUG]: Response: {
+  "id" : "9db533904e5041cbbffa63674ef23743",
+  "name" : "EyrisBby",
+  "properties" : [ {
+    "name" : "textures",
+    "value" : "ewogICJ0aW1lc3RhbXAiIDogMTY3MDQ0MDM3NTg5MywKICAicHJvZmlsZUlkIiA6ICI5ZGI1MzM5MDRlNTA0MWNiYmZmYTYzNjc0ZWYyMzc0MyIsCiAgInByb2ZpbGVOYW1lIiA6ICJFeXJpc0JieSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8zYjYwYTFmNmQ1NjJmNTJhYWViYmYxNDM0ZjFkZTE0NzkzM2EzYWZmZTBlNzY0ZmE0OWVhMDU3NTM2NjIzY2QzIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=",
+    "signature" : "L8QlnYEuSuGFUSCuPHTzOZejKrAMLMh6KAHGtp9mRYTDCutdf3adoOi15bkiYA+Kc08xgivChYqcNMvZPjafwSByZ9iFHuL4pm2iqfOUR+LuYSUA15Y1oOqDZ1jc1bOFK29vmbfdvTx1d1Ej5PMdXTho9jNymXa0MX1KWDboq9IZveFYlJOrgO0VLUMPlAIbMnHgu9aKgh9TGOi9zFsfje5UrK+tI+G467iq1Ed9RYC7FbR9tjXRj8nCtJYuVRfZPBz3PTyDN46T9iI6QVUnVSfsPNBMbJ77J2RqrPVTSjGz+TKu7YLdZP2cLVgKd+Qan3wUb7ru3Zh+CMUC+JwF40b6EetFBHUFj4CVdaEU4a4Y5XKfIPXWvnNN3ATXqWHFpH2NTXN1z9D+j6oK3O5B3s9D9P6CsonKyVthI23vx1yoTAPXIXmXaaZeMwfiTM84BV05fjHNjs3oSxvt2NEtZLBuoebmrnegZLvXxtAJ2PwQqMM6wnJKSfb4fMUtK+BUX7yRgKgDGecRQ++GveOhQZi+DPIy0LnAqNcGpLrZ7Kf3ZvPJkxt9niZx9km+Nr7N0uGt/TgUfqiXpn1eiygPCK2sf5IfYZmtDnO3MZ7t3qXGiC2c6NL7K5oudlC1QKQ2seEghdojWoxfaeDdwyRytQpACbwy4dJuujTHGf9Kd/M="
+  } ]
+}
+[14:12:55] [User Authenticator #1/INFO]: UUID of player EyrisBby is 9db53390-4e50-41cb-bffa-63674ef23743
+[14:12:55] [Server thread/DEBUG]: Disabled auto read
+[14:12:55] [Netty Server IO #3/DEBUG]: Enabled auto read
+[14:12:55] [Server thread/INFO]: EyrisBby[/127.0.0.1:2160] logged in with entity id 260 at ([world]-4.5, 99.0, -2.5)
+[14:12:56] [Server thread/DEBUG]: Autosave started
+[14:12:56] [Server thread/DEBUG]: Autosave finished
+[14:12:58] [Server thread/DEBUG]: Autosave started
+[14:12:58] [Server thread/DEBUG]: Autosave finished
+[14:13:00] [Server thread/DEBUG]: Autosave started
+[14:13:00] [Server thread/DEBUG]: Autosave finished
+[14:13:02] [Server thread/DEBUG]: Autosave started
+[14:13:02] [Server thread/DEBUG]: Autosave finished
+[14:13:04] [Server thread/DEBUG]: Autosave started
+[14:13:04] [Server thread/DEBUG]: Autosave finished
+[14:13:06] [Server thread/DEBUG]: Autosave started
+[14:13:06] [Server thread/DEBUG]: Autosave finished
+[14:13:07] [Worker-Bootstrap-1/DEBUG]: Worker-Bootstrap-1 shutdown
+[14:13:08] [Server thread/DEBUG]: Autosave started
+[14:13:08] [Server thread/DEBUG]: Autosave finished
+[14:13:10] [Server thread/DEBUG]: Autosave started
+[14:13:10] [Server thread/DEBUG]: Autosave finished
+[14:13:12] [Server thread/DEBUG]: Autosave started
+[14:13:12] [Server thread/DEBUG]: Autosave finished
+[14:13:14] [Server thread/DEBUG]: Autosave started
+[14:13:14] [Server thread/DEBUG]: Autosave finished
+[14:13:16] [Server thread/INFO]: EyrisBby lost connection: Disconnected
+[14:13:16] [Server thread/INFO]: EyrisBby left the game
+[14:13:16] [Server thread/DEBUG]: Autosave started
+[14:13:16] [Server thread/DEBUG]: Autosave finished
+[14:13:18] [Server thread/DEBUG]: Autosave started
+[14:13:18] [Server thread/DEBUG]: Autosave finished
+[14:13:19] [Netty Server IO #0/DEBUG]: Enabled auto read
+[14:13:19] [Netty Server IO #0/DEBUG]: Enabled auto read
+[14:13:19] [User Authenticator #2/DEBUG]: Opening connection to https://sessionserver.mojang.com/session/minecraft/hasJoined?serverId=-4f7ef1f8c50d2e9524835ffae73c351bed966c0d&username=EyrisBby
+[14:13:19] [User Authenticator #2/DEBUG]: Reading data from https://sessionserver.mojang.com/session/minecraft/hasJoined?serverId=-4f7ef1f8c50d2e9524835ffae73c351bed966c0d&username=EyrisBby
+[14:13:19] [User Authenticator #2/DEBUG]: Successful read, server response was 200
+[14:13:19] [User Authenticator #2/DEBUG]: Response: {
+  "id" : "9db533904e5041cbbffa63674ef23743",
+  "name" : "EyrisBby",
+  "properties" : [ {
+    "name" : "textures",
+    "value" : "ewogICJ0aW1lc3RhbXAiIDogMTY3MDQ0MDQwMDQ5MiwKICAicHJvZmlsZUlkIiA6ICI5ZGI1MzM5MDRlNTA0MWNiYmZmYTYzNjc0ZWYyMzc0MyIsCiAgInByb2ZpbGVOYW1lIiA6ICJFeXJpc0JieSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8zYjYwYTFmNmQ1NjJmNTJhYWViYmYxNDM0ZjFkZTE0NzkzM2EzYWZmZTBlNzY0ZmE0OWVhMDU3NTM2NjIzY2QzIiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=",
+    "signature" : "Rk7obtp0l0Uli4bkB+4vlOKord/kIc8PV//2WLTVV1YHObf2N+/bBv0roA+uhm9FLnGMW43jhSCdpJa0ghx0K0eg6/+OTl+VDW7GC0Bls3hT9pqC0CR39MjtPvHWU/rfi5O/p54tt4MBj45pl/nkKfrBfX0CQyEe3wxy6jk6fhLYY+CLnoOVJh7Aksa1nGDfHxAElZdycS4eUcQslNnSxTYqJoHGxy8YGCCosqEOxAWuhD3HbvM+fNPIG+NiSmgSWp5YKsN8h0YhfytPDqF5k6jxDKxIhpS0uny3I34JqAAqSbDLo+z64qqf/+e8yjrRfEtwn+XnBmZ6N5pYh3PityNq6130AIEVBJJkGcn9u3x4Qmd0PN8VJkkIE0fmWml6KoRXHIF50+y7MOwMqaj19r27i+ZX/fH8+lZ5N2CT94Re9Y4MJ0V5Wb33MvoAnGskanZGpgkWVs0Ns7PkKOJBqwEQPtWvITNEmAnx7hfh53S7XS3e/AsSip743GKzU49Pv3x5Qs6Yr9jJLoXzAiN+l5sCJ916/MZJEZAnSzSbVvwdNDCFnSAouenDY1e9u8ah4mMbZpZuo0W2r9SPztLnenKjcVBjyBsGjXRdZIs7JyIhrA631z1AMK5Aun2gZ6B5R0TVBNmx5hHvNp2yVVzolHGsDdn8DhPLJW0KJIFVCHU="
+  } ]
+}
+[14:13:19] [User Authenticator #2/INFO]: UUID of player EyrisBby is 9db53390-4e50-41cb-bffa-63674ef23743
+[14:13:19] [Server thread/DEBUG]: Disabled auto read
+[14:13:19] [Netty Server IO #0/DEBUG]: Enabled auto read
+[14:13:19] [Server thread/INFO]: EyrisBby[/127.0.0.1:2176] logged in with entity id 261 at ([lobby]0.4144285483924013, 65.0, 0.4144285483924013)
+[14:13:20] [Server thread/DEBUG]: Autosave started
+[14:13:20] [Server thread/DEBUG]: Autosave finished
+[14:13:22] [Server thread/DEBUG]: Autosave started
+[14:13:22] [Server thread/DEBUG]: Autosave finished
+[14:13:23] [Netty Server IO #1/DEBUG]: Enabled auto read
+[14:13:23] [Netty Server IO #1/DEBUG]: Enabled auto read
+[14:13:23] [Netty Server IO #2/DEBUG]: Enabled auto read
+[14:13:23] [Netty Server IO #2/DEBUG]: Enabled auto read
+[14:13:24] [Server thread/DEBUG]: Autosave started
+[14:13:24] [Server thread/DEBUG]: Autosave finished
+[14:13:26] [Server thread/DEBUG]: Autosave started
+[14:13:26] [Server thread/DEBUG]: Autosave finished
+[14:13:28] [Server thread/DEBUG]: Autosave started
+[14:13:28] [Server thread/DEBUG]: Autosave finished
+[14:13:30] [Server thread/DEBUG]: Autosave started
+[14:13:30] [Server thread/DEBUG]: Autosave finished
+[14:13:32] [Server thread/DEBUG]: Autosave started
+[14:13:32] [Server thread/DEBUG]: Autosave finished
+[14:13:34] [Server thread/DEBUG]: Autosave started
+[14:13:34] [Server thread/DEBUG]: Autosave finished
+[14:13:36] [Server thread/DEBUG]: Autosave started
+[14:13:36] [Server thread/DEBUG]: Autosave finished
+[14:13:38] [Server thread/DEBUG]: Autosave started
+[14:13:38] [Server thread/DEBUG]: Autosave finished
+[14:13:40] [Server thread/DEBUG]: Autosave started
+[14:13:40] [Server thread/DEBUG]: Autosave finished
+[14:13:42] [Server thread/DEBUG]: Autosave started
+[14:13:42] [Server thread/DEBUG]: Autosave finished
+[14:13:44] [Server thread/DEBUG]: Autosave started
+[14:13:44] [Server thread/DEBUG]: Autosave finished
+[14:13:46] [Server thread/DEBUG]: Autosave started
+[14:13:46] [Server thread/DEBUG]: Autosave finished
+[14:13:48] [Server thread/DEBUG]: Autosave started
+[14:13:48] [Server thread/DEBUG]: Autosave finished
+[14:13:50] [Server thread/DEBUG]: Autosave started
+[14:13:50] [Server thread/DEBUG]: Autosave finished
+[14:13:52] [Server thread/DEBUG]: Autosave started
+[14:13:52] [Server thread/DEBUG]: Autosave finished
+[14:13:54] [Server thread/DEBUG]: Autosave started
+[14:13:54] [Server thread/DEBUG]: Autosave finished
+[14:13:56] [Server thread/DEBUG]: Autosave started
+[14:13:56] [Server thread/DEBUG]: Autosave finished
+[14:13:58] [Server thread/DEBUG]: Autosave started
+[14:13:58] [Server thread/DEBUG]: Autosave finished
+[14:14:00] [Server thread/DEBUG]: Autosave started
+[14:14:00] [Server thread/DEBUG]: Autosave finished
+[14:14:00] [Server thread/INFO]: Stopping the server
+[14:14:00] [Server thread/INFO]: Stopping server
+[14:14:00] [Server thread/INFO]: [Multiverse-Inventories] Disabling Multiverse-Inventories v4.2.3-b523
+[14:14:00] [Server thread/INFO]: [Multiverse-Portals] Disabling Multiverse-Portals v4.2.1-b834
+[14:14:00] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v4.3.1-b861
+[14:14:00] [Server thread/INFO]: [Starterinventory] Disabling Starterinventory v1.0-SNAPSHOT
+[14:14:00] [Server thread/INFO]: [VoidGen] Disabling VoidGen v2.2.1
+[14:14:00] [Server thread/INFO]: Saving players
+[14:14:00] [Server thread/INFO]: EyrisBby lost connection: Hasta luega amigo
+[14:14:00] [Server thread/INFO]: EyrisBby left the game.
+[14:14:01] [Server thread/INFO]: Saving worlds
+[14:14:01] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[14:14:02] [Server thread/INFO]: Saving chunks for level 'ServerLevel[lobby]'/minecraft:lobby
+[14:14:02] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[14:14:02] [Server thread/INFO]: ThreadedAnvilChunkStorage (lobby): All chunks are saved
+[14:14:02] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[14:14:02] [Worker-Main-12/DEBUG]: Worker-Main-12 shutdown
+[14:14:02] [Worker-Main-15/DEBUG]: Worker-Main-15 shutdown
+[14:14:02] [Worker-Main-14/DEBUG]: Worker-Main-14 shutdown
+[14:14:02] [Worker-Main-21/DEBUG]: Worker-Main-21 shutdown
+[14:14:02] [Worker-Main-16/DEBUG]: Worker-Main-16 shutdown
+[14:14:02] [Worker-Main-20/DEBUG]: Worker-Main-20 shutdown
+[14:14:02] [Worker-Main-17/DEBUG]: Worker-Main-17 shutdown
+[14:14:02] [Worker-Main-19/DEBUG]: Worker-Main-19 shutdown
+[14:14:02] [Worker-Main-22/DEBUG]: Worker-Main-22 shutdown
+[14:14:02] [Worker-Main-18/DEBUG]: Worker-Main-18 shutdown
+[14:14:02] [Worker-Main-13/DEBUG]: Worker-Main-13 shutdown

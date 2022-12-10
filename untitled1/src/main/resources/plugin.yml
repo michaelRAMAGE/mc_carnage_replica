@@ -1,0 +1,11 @@
+name: Starterinventory
+version: '${project.version}'
+main: w3n.eyris.carnage.tools.Main
+api-version: 1.18
+commands:
+  resetWorld:
+    description: resets world so that players can restart without server owner
+  goToPractice:
+    description: leave lobby and jump into practice server
+  goToLobby:
+    description: go back to lobby, if in another server
